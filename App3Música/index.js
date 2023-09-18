@@ -13,7 +13,6 @@ const playBtn = document.getElementById('play');
 const nextBtn = document.getElementById('next');
 
 
-// Playlist
 
 const songs = [
 
@@ -40,7 +39,7 @@ const songs = [
     }
 ];
 
-//Reproducir musica
+
 
 let isPlaying = false;
 
@@ -60,7 +59,7 @@ function pauseSong() {
 
 playBtn.addEventListener('click', () => (isPlaying ? pauseSong() : playSong()));
 
-//Leer cancion
+
 
 function loadSong(song) {
     titulo.textContent = song.displayName;
@@ -69,11 +68,9 @@ function loadSong(song) {
     image.src = `./img/${song.name}.jpg`;
 }
 
-//Cancion actual
 
 let songIndex = 0;
 
-//cancion anterior
 
 function prevSong() {
     songIndex--;
@@ -84,7 +81,7 @@ function prevSong() {
     playSong();
 }
 
-// cancion siguiente
+
 
 function nextSong() {
     songIndex++;
@@ -95,11 +92,11 @@ function nextSong() {
     playSong();
 }
 
-//Leera la primera cancion
+
 
 loadSong(songs[songIndex]);
 
-//barra de progreso y duracion de la cancion
+
 
 function updateProgressBar(e) {
     if(isPlaying) {
@@ -130,7 +127,7 @@ function updateProgressBar(e) {
     }
 };
 
-//Mostrar la barra de progreso
+
 
 function setProgressBar(e) {
     const width = this.clientWidth;

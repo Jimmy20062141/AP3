@@ -31,7 +31,6 @@ body {
     }
 }
 
-/*Container*/
 
 .container {
     width: 350px;
@@ -73,7 +72,7 @@ body {
     margin: 5px 0 0;
 }
 
-/*Barra de Progreso*/
+
 
 .container .progressBar {
     background: #fff;
@@ -99,7 +98,7 @@ body {
     justify-content: space-between;
 }
 
-/* Controles */
+
 
 .container .controles {
     position: relative;
@@ -116,7 +115,7 @@ body {
     user-select: none;
 }
 
-/* Animaciones */
+
 
 .cuadrado {
     position: absolute;
